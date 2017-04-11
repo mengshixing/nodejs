@@ -1,11 +1,11 @@
 
-function route(pathname,handlers,response){
+function route(pathname,handlers,response,request){
 	
 	console.log(typeof handlers[pathname]);
 	
 	if(typeof handlers[pathname]=== 'function')
 	{
-		return handlers[pathname](response);
+		return handlers[pathname](response,request);
 		
 	}
 	else{

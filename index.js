@@ -13,4 +13,6 @@ handlers['/start']=requestHanders.start;
 
 handlers['/upload']=requestHanders.upload;
 
+handlers['/show']=requestHanders.show;
+
 server.start(route.route,handlers);

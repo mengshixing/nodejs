@@ -12,7 +12,24 @@ function start(route,handers){
 		
 		//var content=route(pathname,handers);
 		
-		route(pathname,handers,response);
+		//var postdata="";
+		
+		//request.setEncoding('utf8');
+		
+/* 		request.addListener('data',function(data){
+			
+			console.log(data);
+			
+			postdata+=data;
+		}) */
+		
+		//request.addListener('end',function(){
+			//postdata+=data;
+			
+		route(pathname,handers,response,request);
+		//})
+		
+		//route(pathname,handers,response);
 		
 		console.log(pathname);
 		//response.writeHead(200,{"Conetent-Type":"text-plain"});

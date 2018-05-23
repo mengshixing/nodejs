@@ -8,4 +8,8 @@
   
 2 阿里云npm安装包失败 npm ERR! Error: CERT_UNTRUSTED   
 这是因为ssl验证问题，使用下面的命令取消ssl验证即可解决:   
-  npm config set strict-ssl false
+  npm config set strict-ssl false  
+  
+3 npm安装包卡住 still fetchmetadata。可以切换cnpm   
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org    
+$ cnpm install [name]

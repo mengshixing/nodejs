@@ -6,6 +6,8 @@
 
 安装nodejs(centos 6.5)
 
+yum install gcc gcc-c++
+
 1下载,解压(/tmp文件夹)
 wget http://nodejs.org/dist/latest-v9.x/node-v9.11.1-linux-x64.tar.xz
 tar xvJf node-v9.11.1-linux-x64.tar.xz 

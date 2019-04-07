@@ -26,3 +26,6 @@ source /etc/profile
 4 测试安装成功
 node -v
 npm -v
+
+
+npm i -f 来处理npm install包依赖的问题 npm i会帮助检测与当前node版本最匹配的npm包版本号，并匹配出来相互依赖的npm包应该提升的版本号 
